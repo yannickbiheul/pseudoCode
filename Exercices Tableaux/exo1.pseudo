@@ -1,0 +1,24 @@
+// Créer un tableau contenant les valeurs de 1 à 6
+
+/* FONCTIONS */
+FONCTION 
+VARIABLES
+    
+DEBUT
+    
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo1
+VARIABLES
+    monTableau[n]: TABLEAU ENTIER
+DEBUT
+    POUR i ALLANT DE 0 A 5 PAR PAS DE 1 FAIRE
+        monTableau[i] <- i + 1
+    FINPOUR
+    // Autre façon d'initialiser un tableau :
+    monTableau <- [1, 2, 3, 4, 5, 6]
+    POUR i ALLANT DE 0 A taille(monTableau)-1 PAR PAS DE 1 FAIRE
+        AFFICHER monTableau[i]
+    FINPOUR
+FIN

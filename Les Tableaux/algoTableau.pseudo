@@ -1,0 +1,27 @@
+// 
+
+/* FONCTIONS */
+FONCTION 
+VARIABLES
+    
+DEBUT
+    
+FIN
+
+/* ALGORITHME */
+ALGORITHME algoTableau
+VARIABLES
+    nombres[n]: TABLEAU ENTIER
+    caracteres[c]: TABLEAU CHAINE DE CARACTERES
+DEBUT
+    nombres[0] <- 4
+    nombres[1] <- 17
+    nombres[2] <- 12
+    nombres[3] <- 4
+    // Pour afficher 17
+    AFFICHER nombres[1]
+    // Parcourir le tableau
+    POUR i ALLANT DE 0 A taille(nombres)-1 PAR PAS DE 1 FAIRE
+        AFFICHER nombres[i]
+    FINPOUR
+FIN
