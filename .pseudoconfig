@@ -1,0 +1,33 @@
+{
+    "custom": {
+        "keyword": [
+            "DEBUT",
+            "FIN",
+            "ALGORITHME",
+            "VARIABLE",
+            "ENTIER",
+            "CHAINE DE CARACTERES",
+            "BOOLEEN",
+            "SI",
+            "ALORS",
+            "SINON",
+            "FINSI",
+            "SELON",
+            "CAS",
+            "AUTREMENT",
+            "AFFICHER",
+            "SAISIR",
+            "POUR",
+            "ALLANT",
+            "A",
+            "PAR",
+            "PAS",
+            "DE",
+            "FAIRE",
+            "FINPOUR",
+            "TANT",
+            "QUE",
+            "FINTANTQUE"
+        ]
+    }
+}
