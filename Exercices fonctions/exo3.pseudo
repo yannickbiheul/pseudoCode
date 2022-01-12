@@ -1,0 +1,23 @@
+// Réaliser une fonction qui va afficher si un nombre passé en paramètres est pair ou non
+
+/* FONCTIONS */
+FONCTION pair(nombre)
+VARIABLES
+    resultat: CHAINE DE CARACTERES
+DEBUT
+    SI (nombre MOD 2 = 0) ALORS
+        resultat <- "Ce nombre est pair"
+    SINON
+        resultat <- "Ce nombre est impair"
+    FINSI
+    AFFICHER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    nombre: ENTIER
+DEBUT
+    SAISIR nombre
+    pair(nombre)
+FIN

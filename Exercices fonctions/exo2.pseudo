@@ -1,0 +1,18 @@
+// Réaliser une fonction qui va afficher le message "Bonjour" suivi d'un pseudo.
+
+/* FONCTIONS */
+FONCTION bonjour(nom)
+VARIABLES
+    resultat: CHAINE DE CARACTERES
+DEBUT
+    resultat <- "Bonjour ", nom
+    AFFICHER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME bonjourMachin
+VARIABLES
+    
+DEBUT
+    bonjour("Yannick")
+FIN

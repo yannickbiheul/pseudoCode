@@ -1,0 +1,18 @@
+// Faire une fonction permettant de calculer la moyenne de 3 nombres
+
+/* FONCTIONS */
+FONCTION moyenne(nombre1, nombre2, nombre3)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- (nombre1 + nombre2 + nombre3) / 3
+    AFFICHER "La moyenne est de : ", resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo4
+VARIABLES
+    
+DEBUT
+    moyenne(5, 10, 15)
+FIN

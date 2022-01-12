@@ -1,0 +1,38 @@
+// Faire une fonction prenant 2 informations en paramètres : un entier et un booleen. -18 = trop jeune, +30 = trop vieux, vrai = femme, faux = homme
+
+/* FONCTIONS */
+FONCTION select(nombre, bool)
+VARIABLES
+    age: CHAINE DE CARACTERES
+    sexe: CHAINE DE CARACTERES
+    resultat: CHAINE DE CARACTERES
+DEBUT
+    SI nombre < 18 ALORS
+        age <- "trop jeune"
+    SINON 
+        SI nombre > 30 ALORS
+            age <- "trop vieux"
+        SINON
+            age <- "acceptable"
+        FINSI
+    FINSI
+    SI (bool) ALORS
+        sexe <- "une femme"
+    SINON
+        sexe <- "un homme"
+    FINSI
+    resultat <- "Vous êtes ", sexe, " et vous êtes ", age, " pour entrer"
+    AFFICHER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo5
+VARIABLES
+    nombre: ENTIER
+    sexe: BOOLEEN
+DEBUT
+    nombre <- 10
+    sexe <- VRAI
+    select(nombre, sexe)
+    select(20, FAUX)
+FIN

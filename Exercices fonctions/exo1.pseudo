@@ -1,0 +1,28 @@
+// Faire traverser le niveau à Milo
+FONCTION gauche
+DEBUT
+    avancer
+    tournerGauche
+FIN
+FONCTION droite
+DEBUT
+    avancer
+    tournerDroite
+FIN
+FONCTION sequence
+DEBUT
+    gauche
+    gauche
+    droite
+    droite
+FIN
+
+ALGORITHME exo1
+VARIABLES
+    
+DEBUT
+    gauche
+    POUR i ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        sequence
+    FINPOUR
+FIN

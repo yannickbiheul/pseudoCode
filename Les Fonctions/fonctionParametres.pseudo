@@ -1,0 +1,28 @@
+// Fonction avec parametres
+
+FONCTION ajoute5(nombre)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 5 + nombre
+    AFFICHER "Le résultat est : ", resultat
+FIN
+FONCTION ditBonjour(prenom, nom)
+VARIABLES
+    resultat: CHAINE DE CARACTERES
+DEBUT
+    resultat <- "Bonjour ", prenom, " ", nom
+    AFFICHER resultat
+FIN
+
+ALGORITHME fonctionParametres
+VARIABLES
+    chiffre1: ENTIER
+    chiffre2: ENTIER
+DEBUT
+    chiffre1 <- 2
+    ajoute5(chiffre1)
+    SAISIR chiffre2
+    ajoute5(chiffre2)
+    ditBonjour("Yannick", "Biheul")
+FIN

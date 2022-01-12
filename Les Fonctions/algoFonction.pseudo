@@ -1,0 +1,44 @@
+// Algorithme de base
+ALGORITHME algoFonction1
+VARIABLE
+    
+DEBUT
+    tournerGauche
+    POUR i ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        avancer
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+        tournerDroite
+    FINPOUR
+    avancer
+    tournerGauche
+    avancer
+FIN
+
+// Mise en place d'une fonction
+FONCTION blocRouge
+DEBUT
+    avancer
+    tournerGauche
+    avancer
+FIN
+FONCTION blocVert
+DEBUT
+    tournerDroite
+    avancer
+    tournerDroite
+FIN
+
+ALGORITHME algoFonction2
+VARIABLE
+    
+DEBUT
+    tournerGauche
+    POUR i ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        blocRouge
+        blocVert
+    FINPOUR
+    blocRouge
+FIN
