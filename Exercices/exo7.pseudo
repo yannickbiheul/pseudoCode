@@ -1,0 +1,14 @@
+// Ecrire un algorithme qui permet de dire bonjour en 4 langues différentes, en fonction d'une variable aléatoire
+ALGORITHME exo7
+VARIABLE
+    langue: ENTIER
+DEBUT
+    langue <- aleatoire(1, 4)
+    SELON langue
+        CAS 1: AFFICHER "Hello"
+        CAS 2: AFFICHER "Bonjour"
+        CAS 3: AFFICHER "Hola"
+        CAS 4: AFFICHER "Hallo"
+        AUTREMENT: AFFICHER "Je ne connais pas cette langue"
+    FINSELON
+FIN

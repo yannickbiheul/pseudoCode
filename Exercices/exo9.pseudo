@@ -1,0 +1,13 @@
+// Ecrire un algorithme qui va additionner les n premiers nombres
+ALGORITHME exo9
+VARIABLE
+    nombre: ENTIER
+    resultat: ENTIER
+DEBUT
+    nombre <- aleatoire(1, 20)
+    resultat <- 0
+    POUR i ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat + i
+    FINPOUR
+    AFFICHER "Le résultat est : ", resultat
+FIN

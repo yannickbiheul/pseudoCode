@@ -1,0 +1,12 @@
+// Ecrire un algorithme qui permet à un utilisateur de saisir un nombre au clavier, correspondant au nombre de fois qu'une ligne de tirets "-" est affichée.
+ALGORITHME exo10
+VARIABLE
+    nombre: ENTIER
+    ligne: CHAINE DE CARACTERES
+DEBUT
+    SAISIR nombre
+    ligne <- "----------"
+    POUR i ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        AFFICHER ligne
+    FINPOUR
+FIN

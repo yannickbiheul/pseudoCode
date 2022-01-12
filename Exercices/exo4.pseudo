@@ -1,0 +1,12 @@
+// Ecrire un algorithme qui permet de récupérer 2 nombres aléatoires, et qui affichera le résultat de la soustraction des deux.
+ALGORITHME exo4
+VARIABLE
+    chiffre1: ENTIER
+    chiffre2: ENTIER
+    resultat: ENTIER
+DEBUT
+    chiffre1 <- aleatoire(1, 10)
+    chiffre2 <- aleatoire(1, 10)
+    resultat <- chiffre1 - chiffre2
+    AFFICHER resultat
+FIN

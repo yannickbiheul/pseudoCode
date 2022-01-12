@@ -1,0 +1,12 @@
+// Ecrire un algorithme qui permet d'afficher la table de multiplication d'un nombre saisi au clavier dans le sens inverse
+ALGORITHME exo5
+VARIABLE
+    nombre: ENTIER
+    resultat: ENTIER
+DEBUT
+    SAISIR nombre
+    POUR i ALLANT DE 10 A 1 PAR PAS DE -1 FAIRE
+        resultat <- nombre * i
+        AFFICHER resultat, " = ", i, " * ", nombre
+    FINPOUR
+FIN

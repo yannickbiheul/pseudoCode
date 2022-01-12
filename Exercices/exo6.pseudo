@@ -1,0 +1,17 @@
+// Ecrire un algorithme qui permet d'obliger la saisie d'un nombre entre 10 et 20
+ALGORITHME exo6
+VARIABLE
+    nombre: ENTIER
+DEBUT
+    FAIRE
+        AFFICHER "Saisir un nombre entre 10 et 20"
+        SAISIR nombre
+        SI nombre < 10 ALORS
+            AFFICHER "Le nombre est trop petit"
+        SINON 
+            SI nombre > 20 ALORS
+                AFFICHER "Le nombre est trop grand"
+            FINSI
+        FINSI
+    TANT QUE nombre < 10 OU nombre > 20 
+FIN

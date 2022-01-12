@@ -1,0 +1,9 @@
+// Ecrire un algorithme qui permet d'afficher des étoiles sur toutes les lignes d'un fichier
+ALGORITHME exo8
+VARIABLE
+    
+DEBUT
+    TANT QUE NON finDeFichier FAIRE
+        AFFICHER "*"
+    FINTANTQUE
+FIN
