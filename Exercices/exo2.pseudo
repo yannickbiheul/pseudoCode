@@ -1,0 +1,85 @@
+ALGORITHME exo2
+VARIABLE
+    cle: BOOLEEN
+    score: ENTIER
+DEBUT
+    cle: FALSE
+    score: 0
+
+    tournerGauche
+    avancer
+    avancer
+    cle <- TRUE
+    tournerDroite
+    tournerDroite
+    avancer
+    tournerGauche
+    SI cle = TRUE ALORS
+        avancer
+    SINON
+        AFFICHER "Je n'ai pas la clé"
+        finDeLalgo
+    FINSI
+    avancer
+    score <- score + 10
+    tournerGauche
+    avancer
+    score <- score + 10
+    tournerDroite
+    tournerDroite
+    avancer
+    avancer
+    score <- score + 10
+    SI score >= 30 ALORS
+        avancer
+    SINON
+        AFFICHER "Je n'ai pas la clé"
+        finDeLalgo
+    FINSI
+    avancer
+FIN
+
+ALGORITHME exo2_2
+VARIABLE
+    cle: BOOLEEN
+    score: ENTIER
+DEBUT
+    cle: FALSE
+    score: 0
+
+    tournerGauche
+    POUR i ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+    cle <- TRUE
+    POUR i ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+        tournerDroite
+    FINPOUR
+    avancer
+    tournerGauche
+    SI cle = TRUE ALORS
+        avancer
+    SINON 
+        AFFICHER "Je n'ai pas la clé"
+        finDeLalgo
+    FINSI
+    avancer
+    score <- score + 10
+    tournerGauche
+    avancer
+    score <- score + 10
+    POUR i ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+        tournerDroite
+    FINPOUR
+    POUR i ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+    score <- score + 10
+    SI score >= 30 ALORS
+        avancer
+    SINON
+        AFFICHER "Je n'ai pas la clé"
+        finDeLalgo
+    FINSI
+    avancer
+FIN
