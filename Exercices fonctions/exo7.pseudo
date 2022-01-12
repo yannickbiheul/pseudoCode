@@ -1,0 +1,20 @@
+// Faire une fonction permettant de retourner la chaine de caractères "Bonjour" suivi du nom et du prénom de la personne.
+
+/* FONCTIONS */
+FONCTION ditBonjour(prenom, nom)
+VARIABLES
+    
+DEBUT
+    RETOURNER "Bonjour ", prenom, " ", nom
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo7
+VARIABLES
+    prenom: CHAINE DE CARACTERES
+    nom: CHAINE DE CARACTERES
+DEBUT
+    SAISIR prenom
+    SAISIR nom
+    AFFICHER ditBonjour(prenom, nom)
+FIN

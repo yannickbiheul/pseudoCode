@@ -1,0 +1,18 @@
+// Une fonction peut retourner des informations
+
+/* FONCTIONS */
+FONCTION somme(chiffre1, chiffre2)
+VARIABLES
+    
+DEBUT
+    RETOURNER chiffre1 + chiffre2
+FIN
+
+/* ALGORITHME */
+ALGORITHME fonctionRetour
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- somme(2, 4)
+    AFFICHER "Le résultat est : ", resultat
+FIN

@@ -1,0 +1,57 @@
+// Faire un algorithme permettant à l'utilisateur de saisir un nombre. Ensuite il peut choisir entre calculer la factorielle ou la somme des n premiers nombres.
+
+/* FONCTIONS */
+FONCTION menu
+VARIABLES
+    monMenu: CHAINE DE CARACTERES
+DEBUT
+    monMenu <- "1 - Factorielle"
+    monMenu <- monMenu + "2 - Somme"
+    monMenu <- monMenu + "3 - Quitter"
+    AFFICHER monMenu
+FIN
+
+FONCTION factorielle(nombre)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 1
+    POUR i ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat * i
+    FINPOUR
+    RETOURNER resultat
+FIN
+
+FONCTION somme(nombre)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat + i
+    FINPOUR
+    RETOURNER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo8
+VARIABLES
+    nombre: ENTIER
+    choix: ENTIER
+    resultat: ENTIER
+DEBUT
+    FAIRE
+        menu
+        AFFICHER "Quelle action voulez-vous faire ?"
+        SAISIR choix
+        AFFICHER "Saisir le chiffre pour le calcul"
+        SAISIR nombre
+        SELON choix
+            CAS 1: resultat <- factorielle(nombre)
+            CAS 2: resultat <- somme(nombre)
+            CAS 3: AFFICHER "A+ !"
+            AUTREMENT: AFFICHER "Ce choix n'existe pas"
+        FINSELON
+        AFFICHER "Le résultat est : ", resultat
+    TANT QUE choix != 0
+FIN

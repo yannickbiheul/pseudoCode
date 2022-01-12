@@ -1,0 +1,24 @@
+// Faire une fonction permettant d'indiquer si un nombre est divisible par 5
+
+/* FONCTIONS */
+FONCTION divisiblePar5(nombre)
+VARIABLES
+    
+DEBUT
+    SI (nombre MOD 5 = 0) ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FINSI
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo6
+VARIABLES
+    nombre: ENTIER
+DEBUT
+    SAISIR nombre
+    SI divisiblePar5(nombre) ALORS
+        AFFICHER nombre, " est divisible par 5"
+    FINSI
+FIN
