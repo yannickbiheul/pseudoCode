@@ -1,0 +1,21 @@
+ALGORITHME exo1
+VARIABLE
+    cle: BOOLEEN
+DEBUT
+    cle <- FAUX
+    avancer
+    tournerDroite
+    avancer
+    cle <- VRAI
+    tournerGauche
+    tournerGauche
+    avancer
+    tournerDroite
+    SI cle = VRAI 
+    ALORS
+        avancer
+    SINON
+        AFFICHER "J'ai oublié la clé"
+    FINSI
+    avancer
+FIN

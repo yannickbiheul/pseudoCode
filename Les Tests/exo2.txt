@@ -1,0 +1,21 @@
+ALGORITHME exo2
+VARIABLE
+    age: ENTIER
+DEBUT
+    age <- ageDuPersonnage
+    SI age > 20
+    ALORS
+        avancer
+    SINON
+        AFFICHER "Je suis trop jeune !"
+        arretDeLalgo
+    FINSI
+    SI age > 28
+    ALORS
+        avancer
+    SINON
+        AFFICHER "Je suis trop jeune !"
+        arretDeLalgo
+    FINSI
+    avancer
+FIN

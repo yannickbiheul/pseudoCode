@@ -1,0 +1,60 @@
+ALGORITHME exo6
+VARIABLE
+    gros: BOOLEEN
+    score: ENTIER
+DEBUT
+    gros <- FAUX
+    score <- 0
+
+    avancer
+
+    SI touchePomme
+    ALORS
+        score <- score + 10
+        AFFICHER "J'ai ",score," points"
+        SI score > 25
+        ALORS
+            gros <- VRAI
+        FINSI
+    FINSI
+
+    avancer
+
+    SI touchePomme
+    ALORS
+        score <- score + 10
+        AFFICHER "J'ai ",score," points"
+        SI score > 25
+        ALORS
+            gros <- VRAI
+        FINSI
+    FINSI
+
+    tournerGauche
+    avancer
+
+    SI touchePomme
+    ALORS
+        score <- score + 10
+        AFFICHER "J'ai ",score," points"
+        SI score > 25
+        ALORS
+            gros <- VRAI
+        FINSI
+    FINSI
+
+    tournerGauche
+    avancer
+
+    SI touchePomme
+    ALORS
+        score <- score + 10
+        AFFICHER "J'ai ",score," points"
+        SI score > 25
+        ALORS
+            gros <- VRAI
+        FINSI
+    FINSI
+
+    avancer
+FIN

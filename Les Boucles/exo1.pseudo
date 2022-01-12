@@ -1,0 +1,11 @@
+ALGORITHME exo1
+DEBUT
+    POUR cpt ALLANT DE 1 A 2 PAR PAS DE 1
+        avancer
+        tournerDroite
+        avancer
+        tournerGauche
+    FINPOUR
+    
+    avancer
+FIN

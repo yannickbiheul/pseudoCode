@@ -1,0 +1,13 @@
+ALGORITHME selon
+VARIABLE
+    faim: ENTIER
+DEBUT
+    faim <- 0
+    SELON faim
+        CAS 0: AFFICHER "J'ai encore très faim"
+        CAS 1: AFFICHER "J'ai encore un peu faim"
+        CAS 2: AFFICHER "J'ai bien mangé"
+        CAS 3: AFFICHER "Je n'ai plus faim"
+        AUTREMENT: AFFICHER "Ce cas n'existe pas"
+    FINSELON
+FIN

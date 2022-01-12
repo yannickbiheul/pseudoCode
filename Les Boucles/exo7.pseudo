@@ -1,0 +1,8 @@
+ALGORITHME exo7
+VARIABLE
+    chiffre: ENTIER
+DEBUT
+    FAIRE
+        SAISIR chiffre
+    TANT QUE chiffre < 5
+FIN

@@ -1,0 +1,9 @@
+ALGORITHME exo5
+DEBUT
+    POUR i ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        TANT QUE naPasAtteintUnMur FAIRE
+            avancer
+        FINTANTQUE
+        tournerGauche
+    FINPOUR
+FIN

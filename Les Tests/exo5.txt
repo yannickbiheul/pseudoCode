@@ -1,0 +1,46 @@
+ALGORITHME exo5
+VARIABLE
+    gros: BOOLEEN
+DEBUT
+    gros <- VRAI
+
+    avancer
+
+    SI toucheBoiteRouge ET gros = VRAI
+    ALORS
+        AFFICHER "Aïe"
+        gros <- FAUX
+    FINSI
+
+    tournerGauche
+    avancer
+
+    SI toucheTete
+    ALORS
+        AFFICHER "Youpi"
+        gros <- VRAI
+    FINSI
+
+    tournerGauche
+    avancer
+
+    SI toucheBoiteRouge ET gros = VRAI
+    ALORS
+        AFFICHER "Aïe"
+        gros <- FAUX
+    FINSI
+
+    tournerDroite
+    avancer
+
+    SI toucheBoiteRouge ET gros = VRAI
+    ALORS
+        AFFICHER "Aïe"
+        gros <- FAUX
+    SINON
+        SI toucheBoiteRouge ET gros = FAUX
+        ALORS
+            AFFICHER "Ouille"
+        FINSI
+    FINSI
+FIN

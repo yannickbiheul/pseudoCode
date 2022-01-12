@@ -1,0 +1,6 @@
+ALGORITHME boucleTantQue
+DEBUT
+    TANT QUE condition FAIRE
+        instruction
+    FINTANTQUE
+FIN

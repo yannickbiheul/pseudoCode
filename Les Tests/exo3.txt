@@ -1,0 +1,17 @@
+ALGORITHME exo3
+VARIABLE
+    age: ENTIER
+    sexe: BOOLEEN
+DEBUT
+    age <- ageDuPersonnage
+    sexe <- sexeDuPersonnage
+
+    SI age > 20 ET sexe = VRAI
+    ALORS
+        avancer
+        avancer
+    SINON
+        AFFICHER "Je ne peux pas passer !"
+        arretDeLalgo
+    FINSI
+FIN

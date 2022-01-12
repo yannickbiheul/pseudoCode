@@ -1,0 +1,21 @@
+ALGORITHME exo1
+VARIABLE
+    texte: CHAINE DE CAR
+DEBUT
+    texte <- ""
+    avancer
+    texte <- texte + "H"
+    avancer
+    texte -> texte + "E"
+    tournerDroite
+    avancer
+    texte <- texte + "L"
+    tournerGauche
+    avancer
+    texte <- texte + "L"
+    tournerGauche
+    avancer
+    texte <- texte + "O"
+    tournerDroite
+    avancer
+FIN

@@ -1,0 +1,13 @@
+ALGORITHME miloPomme
+VARIABLE
+    score : ENTIER
+DEBUT
+    score <- 0
+    avancer
+    score <- score + 10
+    avancer
+    score <- score + 10
+    avancer
+    score <- score + 10
+    avancer
+FIN

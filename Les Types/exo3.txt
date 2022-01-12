@@ -1,0 +1,31 @@
+ALGORITHME exo3
+VARIABLE
+    gros: BOOLEEN
+    score: ENTIER
+    texte: CHAINE DE CAR
+DEBUT
+    gros <- VRAI
+    score <- 0
+    texte <- ""
+    avancer
+    tournerGauche
+    avancer
+    gros <- FAUX
+    avancer
+    texte <- texte + "C"
+    avancer
+    gros <- VRAI
+    tournerGauche
+    avancer
+    score <- score + 10
+    avancer
+    score <- score + 10
+    tournerGauche
+    avancer
+    texte <- texte + "C"
+    tournerGauche
+    avancer
+    gros <- FAUX
+    tournerDroite
+    avancer
+FIN

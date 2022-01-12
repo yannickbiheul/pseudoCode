@@ -1,0 +1,15 @@
+ALGORITHME exo6
+VARIABLE
+    resultat: ENTIER
+    cpt: ENTIER
+DEBUT
+    resultat <- 1
+    cpt <- 1
+
+    TANT QUE resultat < 1000 FAIRE
+        resultat <- resultat * cpt
+        cpt <- cpt + 1
+    FINTANTQUE
+
+    AFFICHER resultat
+FIN

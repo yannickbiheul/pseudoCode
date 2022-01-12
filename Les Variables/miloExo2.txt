@@ -1,0 +1,20 @@
+ALGORITHME miloExo2
+VARIABLE
+    score: ENTIER
+    coeur: ENTIER
+DEBUT
+    score <- 0
+    coeur <- 1
+    tournerGauche
+    avancer
+    score <- score + 10
+    coeur <- coeur + 1
+    tournerDroite
+    tournerDroite
+    avancer
+    tournerGauche
+    avancer
+    score <- score + 10
+    tournerGauche
+    avancer
+FIN

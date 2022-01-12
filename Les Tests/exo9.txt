@@ -1,0 +1,17 @@
+ALGORITHME exo9
+VARIABLE
+    jour: ENTIER
+DEBUT
+    SAISIR jour
+
+    SELON jour
+        CAS 1: AFFICHER "Lundi"
+        CAS 2: AFFICHER "Mardi"
+        CAS 3: AFFICHER "Mercredi"
+        CAS 4: AFFICHER "Jeudi"
+        CAS 5: AFFICHER "Vendredi"
+        CAS 6: AFFICHER "Samedi"
+        CAS 7: AFFICHER "Dimanche"
+        AUTREMENT: AFFICHER "Ce jour n'existe pas"
+    FINSELON
+FIN

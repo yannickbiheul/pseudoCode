@@ -1,0 +1,15 @@
+ALGORITHME exo2
+VARIABLE
+    gros: BOOLEEN
+DEBUT
+    gros <- FAUX
+    tournerGauche
+    avancer
+    gros <- VRAI
+    avancer
+    tournerDroite
+    avancer
+    gros <- FAUX
+    tournerDroite
+    avancer
+FIN

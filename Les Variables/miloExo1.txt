@@ -1,0 +1,23 @@
+ALGORITHME miloExo1
+VARIABLE
+    vies : ENTIER
+    score : ENTIER
+DEBUT
+    vies <- 1
+    score <- 0
+    avancer
+    vies -> vies + 1
+    tournerGauche
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    score <- score + 10
+    tournerDroite
+    avancer
+    score <- score + 10
+    tournerGauche
+    tournerGauche
+    avancer
+    avancer
+FIN
