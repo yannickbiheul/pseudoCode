@@ -1,27 +1,50 @@
 ALGORITHME exo1
 DEBUT
-    POUR i ALLANT DE 1 A 2 PAR PAS DE 1
-        tournerGauche
-        avancer
-    FINPOUR
-    POUR i ALLANT DE 1 A 2 PAR PAS DE 1
-        tournerDroite
-        avancer
-    FINPOUR
-    POUR i ALLANT DE 1 A 2 PAR PAS DE 1
-        tournerGauche
-        avancer
-        POUR j ALLANT DE 1 A 2 PAR PAS DE 1
-            tournerDroite
-            avancer
-        FINPOUR
-    FINPOUR
+    tournerGauche
+
+    avancer
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+    tournerDroite
+
+    avancer
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+    tournerDroite
+
+    avancer
+    tournerGauche
+    avancer
+
+    tournerDroite
+    avancer
+    tournerDroite
+
+    avancer
     tournerGauche
     avancer
 FIN
 
 ALGORITHME exo1_2
 DEBUT
-    
+    tournerGauche
 
+    POUR i ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        avancer
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+        tournerDroite
+    FINPOUR
+
+    avancer
+    tournerGauche
+    avancer
 FIN
