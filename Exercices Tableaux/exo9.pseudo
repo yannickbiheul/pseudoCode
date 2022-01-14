@@ -1,0 +1,32 @@
+/*
+Créer une fonction qui permet d'indiquer si un tableau passé en paramètre ne contient que des valeurs paires ou non. La fonction retourne la valeur VRAI ou FAUX.
+*/
+
+/* FONCTIONS */
+FONCTION valeursPaires(tab)
+VARIABLES
+    
+DEBUT
+    impaires <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI tab[i] MOD 2 != 0 ALORS
+            RETOURNER FAUX
+        FINSI
+    FINPOUR
+    RETOURNER VRAI
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo9
+VARIABLES
+    monTableau[n]: TABLEAU ENTIER
+DEBUT
+    POUR i ALLANT DE 0 A 10 PAR PAS DE 1 FAIRE
+        monTableau[i] <- aleatoire(0, 100)
+    FINPOUR
+    SI valeursPaires(monTableau) ALORS
+        AFFICHER "Le tableau ne contient que des valeurs paires"
+    SINON
+        AFFICHER "Le tableau ne contient pas que des valeurs paires"
+    FINSI
+FIN

@@ -1,0 +1,36 @@
+// Créer une fonction qui affiche tous les éléments d'un tableau passé en paramètre
+
+/* FONCTIONS */
+FONCTION afficherTableauNombres(tab: TABLEAU ENTIER)
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+FONCTION afficherTableauLettres(tab: TABLEAU DE CAR)
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    lettres[c]: TABLEAU DE CAR
+    nombres[n]: TABLEAU ENTIER
+DEBUT
+    lettres[0] <- "a"
+    lettres[1] <- "b"
+    lettres[2] <- "c"
+    POUR i ALLANT DE 0 A 5 PAR PAS DE 1 FAIRE
+        nombres[i] <- i+1
+    FINPOUR
+    afficherTableauLettres(lettres)
+    afficherTableauNombres(nombres)
+FIN

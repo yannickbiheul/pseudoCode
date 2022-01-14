@@ -1,0 +1,32 @@
+/*
+Créer une fonction qui va permettre de générer et de retourner un tableau de x mots. x est saisi par l'utilisateur dans l'algorithme appelant. Chaque mot est ensuite saisi dans la fonction par l'utilisateur.
+*/
+
+/* FONCTIONS */
+FONCTION genererMots(nombre)
+VARIABLES
+    tabMots[c]: TABLEAU CHAINE DE CARACTERES
+DEBUT
+    POUR i ALLANT DE 0 A nombre -1 PAR PAS DE 1 FAIRE
+        SAISIR tabMots[i]
+    FINPOUR
+    RETOURNER tabMots
+FIN
+
+FONCTION afficherTableau(tab)
+DEBUT
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo8
+VARIABLES
+    x: ENTIER
+    monTableau[c]: TABLEAU CHAINE DE CARACTERES
+DEBUT
+    SAISIR x
+    monTableau <- genererMots(x)
+    afficherTableau(monTableau)
+FIN

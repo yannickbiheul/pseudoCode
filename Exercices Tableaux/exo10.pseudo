@@ -1,0 +1,32 @@
+/*
+Créer une fonction qui prend un tableau en paramètre et un nombre. Cette fonction va additionner la multiplication de toutes les valeurs du tableau par le nombre (seulement si cette valeur est supérieure à 20). Elle retournera ensuite le résultat total.
+*/
+
+/* FONCTIONS */
+FONCTION additionMultiple(tab: TABLEAU ENTIER, nombre: ENTIER)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI tab[i] > 20 ALORS
+            resultat <- resultat + tab[i] * nombre
+        FINSI
+    FINPOUR
+    RETOURNER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo10
+VARIABLES
+    monTableau[n]: TABLEAU ENTIER
+    nombre: ENTIER
+    resultat: ENTIER
+DEBUT
+    SAISIR nombre
+    POUR i ALLANT DE 0 A 4 PAR PAS DE 1 FAIRE
+        monTableau[i] <- aleatoire(0, 100)
+    FINPOUR
+    resultat <- additionMultiple(monTableau)
+    AFFICHER "Le résultat est : ", resultat
+FIN

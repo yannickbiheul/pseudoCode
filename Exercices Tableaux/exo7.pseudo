@@ -1,0 +1,36 @@
+/*
+Créer une fonction qui prend en paramètre un tableau d'entier. Elle retournera le nombre de valeurs inférieures à 10 et le nombre de valeurs supérieures à 10
+*/
+
+/* FONCTIONS */
+FONCTION nombreValeurs(tab: TABLEAU ENTIER)
+VARIABLES
+    nombresMoins10: ENTIER
+    nombresPlus10: ENTIER
+    resultat[n]: TABLEAU ENTIER
+DEBUT
+    nombresMoins10 <- 0
+    nombresPlus10 <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI tab[i] < 10 ALORS
+            nombresMoins10++
+        SINON
+            nombresPlus10++
+        FINSI
+    FINPOUR
+    resultat <- [nombresMoins10, nombresPlus10]
+    RETOURNER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo7
+VARIABLES
+    tab1: TABLEAU ENTIER
+    tab2: TABLEAU ENTIER
+DEBUT
+    tab1 <- [5,10,15,20,11,9,10]
+    tab2 <- nombreValeurs(tab1)
+
+    AFFICHER "Il y a ", tab2[0], " notes en dessous de 10"
+    AFFICHER "Il y a ", tab2[1], " notes au dessus de 10"
+FIN

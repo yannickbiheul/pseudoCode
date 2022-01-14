@@ -1,0 +1,26 @@
+// Créer une fonction qui additionne tous les éléments d'un tableau passé en paramètre, seulement si les valeurs sont inférieures à 10. Ensuite la fonction retourne le résultat de ce calcul
+
+/* FONCTIONS */
+FONCTION sommePetitesValeurs(tab: TABLEAU ENTIER)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI tab[i] < 10 ALORS
+            resultat <- resultat + tab[i]
+        FINSI
+    FINPOUR
+    RETOURNER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    monTableau[n]: TABLEAU ENTIER
+DEBUT
+    POUR i ALLANT DE 0 A 10 PAR PAS DE 1 FAIRE
+        monTableau[i] <- aleatoire(1, 20)
+    FINPOUR
+    AFFICHER "La somme est de : ", sommePetitesValeurs(monTableau)
+FIN

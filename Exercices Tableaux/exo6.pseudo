@@ -1,0 +1,45 @@
+/* Créer une fonction qui prend 2 tableau en paramètres. Elle vérifiera celui qui dispose de la plus grande moyenne. Ainsi la fonction retournera VRAI si le 1er tableau contient la plus grande moyenne et FAUX si c'est le 2ème. 
+*/
+
+/* FONCTIONS */
+FONCTION calculMoyenne(tab: TABLEAU ENTIER)
+VARIABLES
+    moyenne: ENTIER
+DEBUT
+    moyenne <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        moyenne <- moyenne + tab[i]
+    FINPOUR
+    moyenne <- moyenne / taille(tab)
+    RETOURNER moyenne
+FIN
+
+FONCTION verifMoyennes(tab1: TABLEAU ENTIER, tab2: TABLEAU ENTIER)
+VARIABLES
+    moyenne1: ENTIER
+    moyenne2: ENTIER
+DEBUT
+    moyenne1 <- calculMoyenne(tab1)
+    moyenne2 <- calculMoyenne(tab2)
+
+    SI moyenne1 > moyenne2 ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FINSI
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    tableau1: TABLEAU ENTIER
+    tableau2: TABLEAU ENTIER
+DEBUT
+    POUR i ALLANT DE 0 A 10 PAR PAS DE 1 FAIRE
+        tableau1[i] <- aleatoire(0, 20)
+    FINPOUR
+    POUR i ALLANT DE 0 A 10 PAR PAS DE 1 FAIRE
+        tableau2[i] <- aleatoire(0, 20)
+    FINPOUR
+    AFFICHER "Le 1er tableau a une moyenne plus élevée : ", verifMoyennes(tableau1, tableau2)
+FIN

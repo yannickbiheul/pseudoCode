@@ -1,0 +1,25 @@
+// Créer un algorithme permettant de remplir un tableau de caractères
+
+/* FONCTIONS */
+FONCTION 
+VARIABLES
+    
+DEBUT
+    
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    tableau[c]: TABLEAU DE CAR
+    cpt: ENTIER
+    continuer: CHAINE DE CARACTERES
+DEBUT
+    cpt <- 0
+    FAIRE
+        SAISIR tableau[cpt]
+        cpt++
+        AFFICHER "Ajouter une lettre ?"
+        SAISIR continuer
+    TANT QUE continuer != non
+FIN

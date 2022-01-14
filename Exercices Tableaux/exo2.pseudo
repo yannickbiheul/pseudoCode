@@ -1,0 +1,39 @@
+// Créer un algorithme, contenant 4 notes, qui prmet de calculer leur moyenne
+
+/* FONCTIONS */
+FONCTION calculMoyenne(tab)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 0 A taille(tab) PAR PAS DE 1 FAIRE
+        resultat <- resultat + tableau[i]
+    FINPOUR
+    resultat <- resultat / taille(tableau)
+    RETOURNER resultat
+FIN
+
+/* ALGORITHME */
+ALGORITHME moyenne
+VARIABLES
+    tableau[n]: TABLEAU ENTIER
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 0 A 3 PAR PAS DE 1 FAIRE
+        tableau[i] <- aleatoire(0, 20)
+        resultat <- resultat + tableau[i]
+    FINPOUR
+    resultat <- resultat / taille(tableau)
+    AFFICHER resultat
+FIN
+
+ALGORITHME moyenne_2
+VARIABLES
+    tableau[n]: TABLEAU ENTIER
+DEBUT
+    POUR i ALLANT DE 0 A 3 PAR PAS DE 1 FAIRE
+        tableau[i] <- aleatoire(0, 20)
+    FINPOUR
+    AFFICHER calculMoyenne(tableau)
+FIN
