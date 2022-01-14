@@ -1,0 +1,68 @@
+/*
+Créer une application qui contient un tableau disposant d'une liste de prénoms. Créer une fonction qui affiche un tableau de noms, une fonction qui affiche le nombre de noms ayant plus de 3 lettres, et une autre qui retourne un nom aléatoire à partir d'un tableau passé en paramètre. L'utilisateur peut quitter l'algorithme en saisissant un chiffre au clavier.
+*/
+
+/* FONCTIONS */
+FONCTION afficherMenu
+VARIABLES
+    
+DEBUT
+    AFFICHER "1 - Tableau de noms"
+    AFFICHER "2 - Noms de plus de 3 lettres"
+    AFFICHER "3 - Nom aléatoire"
+    AFFICHER "0 - Quitter"
+FIN
+
+FONCTION tableauDeNoms(tab)
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tab[i]
+    FINPOUR
+FIN
+
+FONCTION nombreDeNoms(tab)
+VARIABLES
+    resultat: ENTIER
+DEBUT
+    resultat <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        SI taille(tab[i]) > 3 ALORS
+            resultat++
+        FINSI
+    FINPOUR
+    AFFICHER "Le nombre est de : ", resultat
+FIN
+
+FONCTION aleatoireTab(tab)
+VARIABLES
+    random: ENTIER
+DEBUT
+    random <- aleatoire(0, taille(tab)-1)
+    RETOURNER tab[random]
+FIN
+
+/* ALGORITHME */
+ALGORITHME application
+VARIABLES
+    noms[c]: TABLEAU CHAINE DE CARACTERES
+    choixMenu: ENTIER
+    nomAleatoire: CHAINE DE CARACTERES
+DEBUT
+    noms <- ["Terry", "Terry", "John", "Michael", "Eric", "Graham"]
+
+    FAIRE
+        afficherMenu
+        SAISIR choixMenu
+        SELON choixMenu
+            CAS 1: tableauDeNoms(noms)
+            CAS 2: nombreDeNoms(noms)
+            CAS 3: 
+                nomAleatoire <- aleatoire(noms)
+                AFFICHER "Le nom aléatoire est : ", nomAleatoire
+            CAS 0: "A+ !"
+            AUTREMENT: AFFICHER "Pas compris"
+        FINSELON
+    TANT QUE choixMenu != 0
+FIN

@@ -1,0 +1,39 @@
+/*
+Amener Milo à l'arrivée
+*/
+
+/* FONCTIONS */
+FONCTION droite
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 1 A 4 PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+    tournerDroite
+    avancer
+    tournerDroite
+FIN
+
+FONCTION gauche
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 1 A 4 PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+    tournerGauche
+    avancer
+    tournerGauche
+FIN
+
+/* ALGORITHME */
+ALGORITHME milo
+VARIABLES
+    
+DEBUT
+    POUR i ALLANT DE 1 A 3 FAIRE
+        droite
+        gauche
+    FINPOUR
+FIN
