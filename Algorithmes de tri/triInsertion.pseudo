@@ -1,0 +1,29 @@
+/*
+Tri d'insertion
+Tableau : 3, 6, 5, 1, 4, 2
+*/
+
+/* FONCTIONS */
+FONCTION triInsert(tab: ENTIER)
+VARIABLES
+    valeur: ENTIER
+    cpt: ENTIER
+DEBUT
+    POUR i ALLANT DE 1 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        valeur <- tab[i]
+        cpt <- i
+        TANT QUE cpt > 0 ET tab[cpt-1] > valeur FAIRE
+            tab[cpt] <- tab[cpt-1]
+            cpt <- cpt-1
+        FINTANTQUE
+        tab[cpt] <- valeur
+    FINPOUR
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    
+DEBUT
+    
+FIN

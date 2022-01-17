@@ -1,0 +1,50 @@
+/*
+Tri à bulles
+Tableau: 3, 6, 5, 1, 4, 2
+*/
+
+/* FONCTIONS */
+FONCTION triBulle
+VARIABLES
+    tmp: ENTIER
+DEBUT
+    POUR i ALLANT DE taille(tab)-1 A 1 PAR PAS DE 1 FAIRE
+        POUR j ALLANT DE 0 A i-1 PAR PAS DE 1 FAIRE
+            SI tab[j+1] < tab[j] ALORS
+                tmp <- tab[j+1]
+                tab[j+1] <- tab[j]
+                tab[j] <- tmp
+            FINSI
+        FINPOUR
+    FINPOUR
+FIN
+
+FONCTION triBulle2
+VARIABLES
+    tmp: ENTIER
+    termine: BOOLEEN
+    i: ENTIER
+DEBUT
+    termine <- FAUX
+    i <- taille(tab) - 1
+    TANT QUE i > 1 ET !termine FAIRE
+        termine <- VRAI
+        POUR j ALLANT DE 0 A i-1 PAR PAS DE -1 FAIRE
+            SI tab[j+1] < tab[j] ALORS
+                tmp <- tab[j+1]
+                tab[j+1] <- tab[j]
+                tab[j] <- tmp
+                termine <- FAUX
+            FINSI
+        FINPOUR
+        i <- i - 1
+    FINTANTQUE
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    
+DEBUT
+    
+FIN
