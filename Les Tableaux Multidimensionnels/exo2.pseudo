@@ -1,0 +1,30 @@
+/*
+Réaliser un algorithme permettant de calculer la moyenne des élèves
+*/
+
+/* FONCTIONS */
+FONCTION calculMoyenne(tab: ENTIER)
+VARIABLES
+    moyenne: ENTIER
+DEBUT
+    moyenne <- 0
+    POUR i ALLANT DE 0 A taille(tab)-1 PAR PAS DE 1 FAIRE
+        moyenne <- moyenne + tab[i]
+    FINPOUR
+    RETOURNER moyenne / taille(tab)
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo2
+VARIABLES
+    eleves: TABLEAU CHAINE DE CARACTERES
+    moyenne: ENTIER
+DEBUT
+    eleves[0] <- [[4],[17]]
+    eleves[1] <- [[11],[12]]
+    eleves[2] <- [[12],[14]]
+
+    POUR i ALLANT DE 0 A taille(eleves)-1 PAR PAS DE 1 FAIRE
+        AFFICHER "La moyenne de l'élève ", i+1, " est de : ", calculMoyenne(eleves[i])
+    FINPOUR
+FIN

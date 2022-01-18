@@ -1,0 +1,23 @@
+/*
+Réaliser un tableau contenant un tableau de nom et de prénom
+*/
+
+/* FONCTIONS */
+FONCTION 
+VARIABLES
+    
+DEBUT
+    
+FIN
+
+/* ALGORITHME */
+ALGORITHME exo1
+VARIABLES
+    tableau[c][c]: TABLEAU CHAINE DE CARACTERES
+DEBUT
+    tableau <- [["Tya", "Milo"], ["Marco", "Polo"], ["Pablo", "Picasso"]]
+
+    POUR i ALLANT DE 0 A taille(tableau)-1 PAR PAS DE 1 FAIRE
+        AFFICHER tableau[i][0], " - ", tableau[i][1]
+    FINPOUR
+FIN

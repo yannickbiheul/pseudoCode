@@ -1,0 +1,23 @@
+/*
+Réaliser un algorithme de factorielle avec une fonction récursive
+*/
+
+/* FONCTIONS */
+FONCTION factorielle(valeur: ENTIER)
+VARIABLES
+    
+DEBUT
+    SI valeur = 1 ALORS
+        RETOURNER 1
+    SINON
+        RETOURNER valeur * factorielle(valeur-1)
+    FINSI
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    
+DEBUT
+    
+FIN

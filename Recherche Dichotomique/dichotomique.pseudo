@@ -1,0 +1,28 @@
+/*
+Rechercher une valeur dans un tableau. Le tableau doit être trié.
+*/
+
+/* FONCTIONS */
+FONCTION recherche(tab: ENTIER, valeur: ENTIER)
+VARIABLES
+    milieu: ENTIER
+DEBUT
+    milieu <- taille(tab) / 2
+    SI tab[milieu] = valeur ALORS
+        RETOURNER milieu
+    SINON
+        SI tab[milieu] < valeur ALORS
+            RETOURNER recherche(tab[0:milieu]: ENTIER, valeur: ENTIER)
+        SINON
+        RETOURNER recherche(tab[milieu:taille(tab)-1]: ENTIER, valeur: ENTIER)
+        FINSI
+    FINSI
+FIN
+
+/* ALGORITHME */
+ALGORITHME 
+VARIABLES
+    
+DEBUT
+    
+FIN
