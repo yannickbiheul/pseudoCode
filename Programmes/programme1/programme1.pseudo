@@ -1,0 +1,24 @@
+/*
+Afficher le résultat de la soustraction de 2 nombres aléatoires.
+*/
+
+/* FONCTIONS */
+FONCTION 
+VARIABLES
+    
+DEBUT
+    
+FIN
+
+/* ALGORITHME */
+ALGORITHME programme1
+VARIABLES
+    chiffre1: ENTIER
+    chiffre2: ENTIER
+    resultat: ENTIER
+DEBUT
+    chiffre1 <- aleatoire(1,20)
+    chiffre2 <- aleatoire(1,20)
+    resultat <- chiffre1 - chiffre2
+    AFFICHER resultat
+FIN
