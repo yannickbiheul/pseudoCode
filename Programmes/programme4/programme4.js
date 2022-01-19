@@ -1,4 +1,4 @@
-let readline = require("readline-sync");
+let readline = require("../node_modules/readline-sync");
 
 let mois = readline.questionInt("Entrez le numero du mois : ");
 
@@ -41,5 +41,4 @@ switch (mois) {
         break;
     default:
         console.log("Pas compris");
-        break;
 }
