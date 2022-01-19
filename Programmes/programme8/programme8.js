@@ -9,7 +9,7 @@ function calculMoyenne(tab) {
 
 let tableau = [];
 for (let i = 0; i < 5; i++) {
-    tableau[i] = Math.floor(Math.random() * 10);
+    tableau[i] = Math.floor(Math.random() * 20);
 }
 
 let moyenne = calculMoyenne(tableau);
